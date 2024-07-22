@@ -1,0 +1,15 @@
+{
+  "name": "0x00-es6_basic",
+  "version": "1.0.0",
+  "description": "this Repository contains the project related to JavaScript named 0x00. ES6 Basics",
+  "main": "0-main.js",
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node 0-main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
