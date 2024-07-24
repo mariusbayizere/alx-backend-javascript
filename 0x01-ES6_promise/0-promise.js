@@ -1,10 +1,7 @@
 // 0-promise.js
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("Success");
-        }, 1000);
+        // Example logic: resolving the promise
+        resolve('Success');
     });
 }
-
-export default getResponseFromAPI;
