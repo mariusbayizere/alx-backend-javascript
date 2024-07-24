@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/node": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "Babel": "0.0.1",
+    "package.json": "^2.0.1"
+  }
+}
