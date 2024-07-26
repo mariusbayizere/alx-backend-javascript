@@ -1,60 +1,57 @@
 export default class HolbertonCourse {
-    constructor(name, length, students) {
-        this._name = this.validateName(name);
-        this._length = this.validateLength(length);
-        this._students = this.validateStudents(students);
+  constructor(name, length, students) {
+    if (typeof name === 'string') {
+      this._name = name;
+    } else {
+      throw new TypeError('Name must be a string');
     }
 
-    // Getter for name
-    get name() {
-        return this._name;
+    if (typeof length === 'number') {
+      this._length = length;
+    } else {
+      throw new TypeError('Length must be a number');
     }
 
-    // Setter for name
-    set name(value) {
-        this._name = this.validateName(value);
+    if (Array.isArray(students)) {
+      this._students = students;
+    } else {
+      throw new TypeError('Students must be an array');
     }
+  }
 
-    // Getter for length
-    get length() {
-        return this._length;
-    }
+  get name() {
+    return this._name;
+  }
 
-    // Setter for length
-    set length(value) {
-        this._length = this.validateLength(value);
+  set name(name) {
+    if (typeof name === 'string') {
+      this._name = name;
+    } else {
+      throw new TypeError('Name must be a string');
     }
+  }
 
-    // Getter for students
-    get students() {
-        return this._students;
-    }
+  get length() {
+    return this._length;
+  }
 
-    // Setter for students
-    set students(value) {
-        this._students = this.validateStudents(value);
+  set length(length) {
+    if (typeof length === 'number') {
+      this._length = length;
+    } else {
+      throw new TypeError('Length must be a number');
     }
+  }
 
-    // Validation for name
-    validateName(name) {
-        if (typeof name !== 'string') {
-            throw new TypeError('Name must be a string');
-        }
-        return name;
-    }
+  get students() {
+    return this._students;
+  }
 
-    // Validation for length
-    validateLength(length) {
-        if (typeof length !== 'number') {
-            throw new TypeError('Length must be a number');
-        }
-        return length;
+  set students(students) {
+    if (Array.isArray(students)) {
+      this._students = students;
+    } else {
+      throw new TypeError('Students must be an array');
     }
-    validateStudents(students) {
-        if (!Array.isArray(students) || !students.every(student => typeof student === 'string')) {
-            throw new TypeError('Students must be an array of strings');
-        }
-        return students;
-    }
+  }
 }
-
