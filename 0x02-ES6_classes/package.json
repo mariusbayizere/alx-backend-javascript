@@ -2,12 +2,12 @@
   "name": "0x02-ES6_classes",
   "version": "1.0.0",
   "description": "This project focuses on ES6 classes and constructors.",
-  "main": "1-classroom.js",
+  "main": "9-hoisting.js",
   "type": "module",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "dev": "node 1-main.js",
+    "dev": "node 9-main.js",
     "test": "echo \"No test specified\""
   },
   "keywords": [],
