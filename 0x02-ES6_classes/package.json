@@ -1,0 +1,16 @@
+{
+  "name": "0x02-ES6_classes",
+  "version": "1.0.0",
+  "description": "this Project called 0x02. ES6 classes are focus on the class and constructor",
+  "main": "0-classroom.js",
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node 0-main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
