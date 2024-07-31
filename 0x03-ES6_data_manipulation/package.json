@@ -1,0 +1,19 @@
+{
+  "name": "0x03-ES6_data_manipulation",
+  "version": "1.0.0",
+  "description": "## Project: ES6 Data Manipulation",
+  "main": "0-main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node 0-main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
