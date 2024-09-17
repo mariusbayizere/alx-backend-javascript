@@ -1,0 +1,17 @@
+{
+  "name": "0x05-node_js_basic",
+  "version": "1.0.0",
+  "description": "this my README FILE FOR MY PROJECT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node 0-main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "eslint": "^9.10.0"
+  }
+}
