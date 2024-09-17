@@ -1,7 +1,7 @@
-// Import the console module 
-const displayMessage = (message) => {
-  console.log(message);
-};
+/**
+ * Display message to console
+ * @param {message} mesasge to be diplayed
+ */
+const displayMessage = (message) => console.log(message);
 
-// Export the function
 module.exports = displayMessage;
